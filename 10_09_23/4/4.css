@@ -1,0 +1,14 @@
+p, code {
+  color: red;
+
+}
+#name {
+ color:blue;
+background-color:cyan
+}
+.cls {
+ color:olive;
+}
+p[id] {
+font-size: 10px;
+}
