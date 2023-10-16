@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+  color: blue;
+}
+
+p, code {
+  color: red;
+
+}
+#name {
+ color:black;
+background-color:cyan
+}
+.cls {
+ color:olive;
+}
+
+p.cls {
+ color:magenta;
+}
+
+p[id] {
+font-size: 10px;
+}
