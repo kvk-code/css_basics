@@ -1,0 +1,6 @@
+https://www.w3schools.com/cssref/pr_border.asp
+
+
+detailed
+------------
+https://developer.mozilla.org/en-US/docs/Web/CSS/border
