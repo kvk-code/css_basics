@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Positioning Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Added height to demonstrate scrolling */
+  }
+  .relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightblue;
+    padding: 10px;
+  }
+  .absolute-container {
+    position: relative; /* Needed to act as a container for the absolute element */
+    height: 100px;
+    background-color: lightcoral;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .absolute {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    background-color: gold;
+    padding: 10px;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+  .sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: lightgrey;
+    padding: 10px;
+  }
+  .content {
+    height: 500px; /* Added height to demonstrate scrolling */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<div class="relative">
+  This box is relatively positioned 20px down and 20px to the right of its normal position.
+</div>
+
+<div class="absolute-container">
+  This is a container for the absolute element.
+  <div class="absolute">
+    This box is absolutely positioned 30px from the top and 10px from the right of its container.
+  </div>
+</div>
+
+<div class="fixed">
+  This box is fixed to the bottom left of the viewport.
+</div>
+
+<div class="content">
+  Scroll down to see the sticky positioning effect.
+</div>
+
+<div class="sticky">
+  This box will stick to the top of the viewport when you scroll.
+</div>
+
+<div class="content">
+  More content to show scrolling effect.
+</div>
+
+</body>
+</html>

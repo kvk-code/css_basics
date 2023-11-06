@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relative Positioning Example</title>
+<style>
+  .relative-box {
+    position: relative;
+    top: 10px; /* Move the box 10 pixels down from its normal position, change from 10 to 30 to observe overlapping */
+    left: 20px; /* Move the box 20 pixels to the right from its normal position */
+    background-color: lightblue;
+    padding: 10px;
+    opacity: 0.5;
+  }
+  .content-before {
+    background-color: lightcoral;
+    padding: 10px;
+  }
+  .content-after {
+    background-color: lightgreen;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<p class="content-before">
+  This paragraph is before the relatively positioned element. The relative element will not affect the position of this text.
+</p>
+
+<div class="relative-box">
+  I am a relatively positioned box.
+</div>
+
+<p class="content-after">
+  This paragraph is after the relatively positioned element. Notice how the box overlaps this text instead of pushing it down because the box's original space is preserved.
+</p>
+
+</body>
+</html>
