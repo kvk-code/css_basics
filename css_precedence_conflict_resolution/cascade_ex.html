@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal stylesheet */
+        p {
+            color: blue;
+        }
+        .text {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p class="text" style="color: purple;">This is a paragraph with multiple style rules.</p>
+    </div>
+</body>
+</html>

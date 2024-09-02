@@ -1,0 +1,16 @@
+/* External stylesheet */
+p {
+    color: red;
+}
+
+#container p {
+    color: orange;
+}
+
+p.text {
+    color: yellow;
+}
+
+p {
+    color: pink;
+}
